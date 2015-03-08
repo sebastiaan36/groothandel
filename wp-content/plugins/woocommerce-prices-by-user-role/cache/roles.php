@@ -1,0 +1,1 @@
+<?php return '{"gold_member":"Gold Member","silver_member":"Silver Member","bronze_member":"Bronze Member"}';

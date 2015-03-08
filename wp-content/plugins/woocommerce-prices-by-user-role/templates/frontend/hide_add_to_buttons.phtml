@@ -1,0 +1,24 @@
+<style>
+    form.cart,
+    div.single_variation_wrap,
+    form.cart button.single_add_to_cart_button,
+    form.cart > div.buttons_added,
+    form.cart > div.wishlist-btn-container
+    {
+        display: none;
+    }
+</style>
+<script type="text/javascript">
+    jQuery(document).ready(function() 
+    {
+        if (jQuery('form.cart table').length) {
+            jQuery('form.cart div.single_variation_wrap').detach();
+            jQuery('form.cart button.single_add_to_cart_button').detach();
+            jQuery('form.cart table.group_table td.price').detach();
+            jQuery('form.cart div.wishlist-btn-container').detach();
+            jQuery('form.cart').show();
+        } else {
+            jQuery('form.cart').detach();
+        }
+    }); 
+</script>
